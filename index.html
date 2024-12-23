@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocket Soccer | Rocket Soccer Hacked</title>
+    <title>Head Soccer | Hacked | 10+</title>
     <meta
       name="description"
-      content="Rocket Soccer - Play Rocket Soccer Derby Unblocked. Play Now !"
+      content="Head Soccer - Play Head Soccer Unblocked Now !"
     />
-    <link rel="icon" type="image/png" href="/RC.png" />
-    <meta property="og:title" content="Rocket Soccer | Rocket Soccer Hacked" />
+    <link rel="icon" type="image/png" href="/ball.png" />
+    <meta property="og:title" content="Head Soccer | Head Soccer Hacked" />
     <meta
       property="og:description"
-      content="Rocket Soccer - Play Rocket Soccer Derby Unblocked. Play Now!"
+      content="Head Soccer - Play Head Soccer Now!"
     />
-    <meta property="og:image" content="/rocket-soccer.png" />
+    <meta property="og:image" content="/headsoccer.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rocket-soccer.github.io/" />
+    <meta property="og:url" content="https://head-soccer.github.io/" />
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-R04RX1XXYR"
+      src="https://www.googletagmanager.com/gtag/js?id=G-FYP50YT9T4"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -31,7 +31,7 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-R04RX1XXYR");
+      gtag("config", "G-FYP50YT9T4");
     </script>
     <style>
       * {
@@ -42,9 +42,24 @@
 
       body {
         font-family: "Arial", sans-serif;
-        background: linear-gradient(135deg, #1a1a2e, #16213e);
+        /* Animated gradient background */
+        background: linear-gradient(-45deg, #330867, #31a7bb, #2575fc, #6c72cb);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
         color: white;
         min-height: 100vh;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
 
       .container {
@@ -59,27 +74,28 @@
         align-items: center;
         padding: 20px 0;
         margin-bottom: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
       }
 
       .logo {
         font-size: 2.5em;
         font-weight: bold;
-        color: #ff4d4d;
+        color: #fff;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
-          0 0 20px rgba(255, 77, 77, 0.5);
-        background: linear-gradient(45deg, #ff4d4d, #ff6b6b);
+        background: linear-gradient(45deg, #00fff2, #4d79ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all 0.3s ease;
       }
 
       .logo:hover {
+        text-shadow: 0 0 15px rgba(0, 255, 242, 0.5);
         transform: scale(1.05);
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5),
-          0 0 30px rgba(255, 77, 77, 0.7);
       }
 
       .nav-menu ul {
@@ -92,20 +108,33 @@
         color: white;
         text-decoration: none;
         font-size: 1.1em;
-        transition: color 0.3s;
+        transition: all 0.3s ease;
+        padding: 8px 15px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
       }
 
       .nav-menu a:hover {
-        color: #ff4d4d;
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
       }
 
       .main-game {
         position: relative;
         background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 15px;
         padding: 20px;
         margin-bottom: 30px;
         aspect-ratio: 16/9;
+        transition: all 0.3s ease;
+      }
+
+      .main-game:hover {
+        box-shadow: 0 0 30px rgba(0, 255, 242, 0.2);
       }
 
       .game-window {
@@ -131,21 +160,37 @@
 
       .game-tab {
         background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
         padding: 15px;
         cursor: pointer;
         transition: all 0.3s ease;
         text-align: center;
+        animation: fadeIn 0.5s ease backwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .game-tab:hover {
-        background: rgba(255, 77, 77, 0.2);
         transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-color: #00fff2;
       }
 
       .game-tab.active {
-        background: rgba(255, 77, 77, 0.3);
-        border: 2px solid #ff4d4d;
+        background: rgba(0, 255, 242, 0.1);
+        border: 2px solid #00fff2;
+        box-shadow: 0 0 20px rgba(0, 255, 242, 0.3);
       }
 
       .game-tab img {
@@ -154,11 +199,18 @@
         object-fit: cover;
         border-radius: 8px;
         margin-bottom: 10px;
+        transition: all 0.3s ease;
+        filter: brightness(0.9);
+      }
+
+      .game-tab:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
       }
 
       .game-tab h3 {
-        color: #ff4d4d;
-        margin-bottom: 5px;
+        color: #00fff2;
+        text-shadow: 0 0 10px rgba(0, 255, 242, 0.3);
       }
 
       .game-tab p {
@@ -225,13 +277,21 @@
 
       .description-box {
         background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
         padding: 15px;
         flex: 1;
+        transition: all 0.3s ease;
+      }
+
+      .description-box:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       }
 
       .description-box h2 {
-        color: #ff4d4d;
+        color: #00fff2;
+        text-shadow: 0 0 10px rgba(0, 255, 242, 0.3);
         margin-bottom: 10px;
       }
 
@@ -241,7 +301,7 @@
       }
 
       .description-box strong {
-        color: #ff6b6b;
+        color: #4d79ff;
       }
 
       .keywords {
@@ -260,8 +320,14 @@
 
       .keywords li {
         margin-bottom: 5px;
-        color: #ff6b6b;
+        color: #00fff2;
         opacity: 0.8;
+        transition: all 0.3s ease;
+      }
+
+      .keywords li:hover {
+        opacity: 1;
+        transform: translateX(5px);
       }
 
       .controls {
@@ -299,12 +365,37 @@
         height: 100%;
         border-radius: 8px;
       }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #00fff2, #668cfe);
+        border-radius: 5px;
+      }
+
+      /* Stagger animation for game tabs */
+      .game-tab:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .game-tab:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .game-tab:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      /* ... continue for other items */
     </style>
   </head>
   <body>
     <div class="container">
       <header>
-        <a href="index.html" class="logo">Rocket Soccer</a>
+        <a href="index.html" class="logo">Head Soccer</a>
         <nav class="nav-menu">
           <ul>
             <li>
@@ -321,7 +412,7 @@
             <div class="game-wrapper">
               <iframe
                 class="game-window"
-                src="/rocket-soccer/index.html"
+                src="/halloween-head-soccer/index.html"
                 id="gameFrame"
               ></iframe>
             </div>
@@ -329,33 +420,34 @@
 
           <div class="game-description">
             <div class="description-box">
-              <h2>Rocket Soccer – The Ultimate Racing-Soccer Experience</h2>
+              <h2>Head Soccer – The Ultimate Soccer Challenge</h2>
               <p>
-                <strong>Rocket Soccer</strong> is a thrilling game that combines
-                high-speed racing with intense soccer matches, delivering a
-                completely unique experience. In this game, you control
-                rocket-powered cars to participate in dynamic soccer battles.
-                Accelerate, unleash powerful shots, and perform amazing stunts
-                to score goals and secure victories.
+                <strong>Head Soccer</strong> is an exciting and fast-paced game
+                that focuses on thrilling soccer matches with unique mechanics.
+                In this game, you control customizable characters to engage in
+                dynamic one-on-one soccer battles. Jump, kick, and unleash
+                powerful shots to outplay your opponents and score goals in
+                style.
               </p>
               <p>
-                With the <strong>Rocket Soccer Derby</strong> mode, players can
-                challenge themselves in fierce matches against competitive
-                opponents. Additionally, the
-                <strong>Rocket Soccer Derby Unblocked</strong> version allows
-                you to enjoy the game anywhere, even in restricted environments.
-                If you love high-speed action and challenging matches,
-                <strong>Rocket Soccer Unblocked</strong> is the perfect choice
-                for entertainment.
+                Whether you’re looking for intense competition or casual
+                gameplay, <strong>Head Soccer</strong> offers a variety of modes
+                to keep you entertained. The game’s intuitive controls and
+                engaging features make it perfect for both new players and
+                seasoned gamers. Explore unblocked versions of
+                <strong>Head Soccer</strong> to enjoy seamless play anytime,
+                anywhere, including environments with restrictions.
               </p>
 
               <section class="keywords">
                 <h2>Related Keywords</h2>
                 <ul>
-                  <li>Rocket Soccer</li>
-                  <li>Rocket Soccer Derby</li>
-                  <li>Rocket Soccer Derby Unblocked</li>
-                  <li>Rocket Soccer Unblocked</li>
+                  <li>Head Soccer</li>
+                  <li>Head Of Soccer</li>
+                  <li>Head Soccer Unblocked</li>
+                  <li>Soccer Heads</li>
+                  <li>Sports Head Soccer</li>
+                  <li>Head Soccer Unblocked 2024</li>
                 </ul>
               </section>
             </div>
@@ -363,7 +455,9 @@
             <div class="description-box">
               <div class="video-container">
                 <iframe
-                  src="https://www.youtube.com/embed/M-dSkMQecY4?si=jjrXiZ47mCMCqaTg"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/0DG9-zQMlhw?si=QPtJghPYX8_7wdON"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -431,15 +525,9 @@
             <h3>Bobblehead Soccer</h3>
           </div>
 
-          <div
-            class="game-tab"
-            data-game-url="/halloween-head-soccer/index.html"
-          >
-            <img
-              src="/halloween-head-soccer/logo.png"
-              alt="Halloween Head Soccer"
-            />
-            <h3>Halloween Head Soccer</h3>
+          <div class="game-tab" data-game-url="/rocket-soccer/index.html">
+            <img src="/rocket-soccer/screenshots/3.jpg" alt="Rocket Soccer" />
+            <h3>Rocket Soccer</h3>
           </div>
 
           <div class="game-tab" data-game-url="/head-soccer-2023/index.html">
